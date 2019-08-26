@@ -1,4 +1,5 @@
 ## Resources
+_Exercise authored by [Brianna](https://github.com/bkincart)_
 
 * [Redux Explained Again](https://almerosteyn.com/2016/08/redux-explained-again)
 * [Redux Docs](https://redux.js.org/faq/general)
