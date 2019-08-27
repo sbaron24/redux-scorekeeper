@@ -28,16 +28,24 @@ const scoreReducer = (state = initialState, action) => {
 const playerOneScoreButton = document.getElementById('add-player-one-point')
 const playerTwoScoreButton = document.getElementById('add-player-two-point')
 
-playerOneScoreButton.addEventListener('click', () => {
-  store.dispatch({
+const addPointToPlayerOneScore = () => {
+  return {
     type: ADD_PLAYER_ONE_POINT
-  })
+  }
+}
+
+playerOneScoreButton.addEventListener('click', () => {
+  store.dispatch(addPointToPlayerOneScore())
 })
 
-playerTwoScoreButton.addEventListener('click', () => {
-  store.dispatch({
+const addPointToPlayerTwoScore = () => {
+  return {
     type: ADD_PLAYER_TWO_POINT
-  })
+  }
+}
+
+playerTwoScoreButton.addEventListener('click', () => {
+  store.dispatch(addPointToPlayerTwoScore())
 })
 
 const store = createStore(scoreReducer)
